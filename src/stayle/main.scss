@@ -1,0 +1,101 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    list-style: none;
+}
+
+.header {
+    background-image: url(../image/celebrating-with-sparklers-night.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+
+    &__title {
+        font-size: 64px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+    &__subtitle {
+        font-size: 32px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        content: '';
+        opacity: .8;
+    }
+}
+
+.form{
+    &__title{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    &__forms{
+        margin-top: 5px;
+        align-items: center;
+        &__input{
+            background-color: #00000080;
+            border: 1px #fff solid;
+            border-radius: 50px;
+            padding: 2px;
+            margin-right: 12px;
+            font-size: 18px
+        }
+        
+        &__button {
+            background-color: #00000080;
+            border: 1px #fff solid;
+            border-radius: 50px;
+            padding: 2px;
+            padding-inline: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all ease .3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.lista {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+    align-items: center;
+    justify-content: center;
+    &__item{
+
+        &__contador {
+            background-color: #00000080 ;
+            font-size: 21px;
+            border: 1px #fff solid;
+            border-radius: 50px;
+            padding-block: 5px;
+            padding-inline: 22px;
+        }
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
