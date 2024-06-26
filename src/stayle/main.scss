@@ -8,6 +8,10 @@
     list-style: none;
 }
 
+body{
+    overflow: hidden;
+}
+
 .header {
     background-image: url(../image/celebrating-with-sparklers-night.jpg);
     background-position: center;
@@ -45,7 +49,6 @@
     }
     &__forms{
         margin-top: 5px;
-        align-items: center;
         &__input{
             background-color: #00000080;
             border: 1px #fff solid;
@@ -88,6 +91,23 @@
             border-radius: 50px;
             padding-block: 5px;
             padding-inline: 22px;
+        }
+    }
+}
+
+.comemoracao {
+    position: absolute;
+    top: 200;
+    left: 0;
+
+    &__itens {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        &__gif {
+            width: calc(100vw - 940px);
         }
     }
 }

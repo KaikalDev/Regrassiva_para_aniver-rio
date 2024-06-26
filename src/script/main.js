@@ -37,6 +37,19 @@ document.getElementById('btn-acionar').addEventListener('click', function() {
         if (distanciaDoAniversario < 0) {
             clearInterval(contaAsHoras);
             document.getElementById('text').innerHTML = 'Feliz Aniversário!';
+            document.getElementById('fogos').innerHTML = "<ul class=\"comemoracao__itens\">" +
+            "<li class=\"comemoracao__item\">" +
+                "<img class=\"comemoracao__item__gif\" src=\"/Gif-Fogos-de-artifício.44a1ca6f.gif\" alt=\"\">" +
+            "</li>" +
+            "<li class=\"comemoracao__item\">" +
+                "<img class=\"comemoracao__item__gif\" src=\"/Gif-Fogos-de-artifício.44a1ca6f.gif\" alt=\"\">" +
+            "</li>" +
+        "</ul>";
+            setTimeout(function() {
+                document.getElementById('fogos').innerHTML = ""; 
+            }, 3000);
+        } else {
+            document.getElementById('fogos').innerHTML = "";
         }
     }, 1000);
 });
